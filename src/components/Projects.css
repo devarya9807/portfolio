@@ -1,0 +1,82 @@
+/* Basic styles */
+
+.projects-section {
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hollow-text {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project card styles */
+  
+  .project-card {
+    background-color: #fff; /* White card background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    display: flex; /* Arrange elements horizontally */
+    align-items: start; /* Align content vertically for even spacing */
+    height: 25vh;
+    overflow: hidden;
+    
+  }
+
+  
+  .project-card:hover {
+    height: auto;
+    transform: translateY(-5px);
+  }
+  .project-card:click {
+    height: auto;
+    transform: translateY(-5px);
+  }
+  
+  .project-header {
+    flex: 1; /* Allocate space for title and technologies */
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .tech-list {
+    font-size: 0.8rem;
+    color: #aaa; /* Lighter color for technologies */
+    text-transform: uppercase; /* Convert technologies to uppercase for emphasis */
+    margin-left: 10px; /* Add spacing after project title */
+  }
+  
+  .project-description {
+    flex: 2; /* Allocate more space for project description */
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-left: 20px; /* Add spacing after project header */
+  }
+  
+  /* Project grid styles */
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .tech-list .tech-item:hover{
+    color: black;
+    opacity: 1;
+  }
